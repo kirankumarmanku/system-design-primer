@@ -384,7 +384,7 @@ First, you'll need a basic understanding of common principles, learning about wh
 
 ### Step 2: Review the scalability article
 
-[Scalability](http://www.lecloud.net/tagged/scalability/chrono)
+[Scalability] :heavy_check_mark: (http://www.lecloud.net/tagged/scalability/chrono)
 
 * Topics covered:
     * [Clones](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
@@ -404,7 +404,7 @@ Keep in mind that **everything is a trade-off**.
 
 Then we'll dive into more specific topics such as DNS, CDNs, and load balancers.
 
-## Performance vs scalability
+## Performance vs scalability :heavy_check_mark:
 
 A service is **scalable** if it results in increased **performance** in a manner proportional to resources added. Generally, increasing performance means serving more units of work, but it can also be to handle larger units of work, such as when datasets grow.<sup><a href=http://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html>1</a></sup>
 
@@ -415,8 +415,8 @@ Another way to look at performance vs scalability:
 
 ### Source(s) and further reading
 
-* [A word on scalability](http://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html)
-* [Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
+* [A word on scalability] :heavy_check_mark: (http://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html)
+* [Scalability, availability, stability, patterns] :heavy_check_mark: (http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
 
 ## Latency vs throughput
 
@@ -428,11 +428,11 @@ Generally, you should aim for **maximal throughput** with **acceptable latency**
 
 ### Source(s) and further reading
 
-* [Understanding latency vs throughput](https://community.cadence.com/cadence_blogs_8/b/sd/archive/2010/09/13/understanding-latency-vs-throughput)
+* [Understanding latency vs throughput] :heavy_check_mark: (https://community.cadence.com/cadence_blogs_8/b/sd/archive/2010/09/13/understanding-latency-vs-throughput)
 
 ## Availability vs consistency
 
-### CAP theorem
+### CAP theorem :heavy_check_mark:
 
 <p align="center">
   <img src="http://i.imgur.com/bgLMI2u.png">
@@ -460,9 +460,9 @@ AP is a good choice if the business needs allow for [eventual consistency](#even
 
 ### Source(s) and further reading
 
-* [CAP theorem revisited](http://robertgreiner.com/2014/08/cap-theorem-revisited/)
-* [A plain english introduction to CAP theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem/)
-* [CAP FAQ](https://github.com/henryr/cap-faq)
+* [CAP theorem revisited] :heavy_check_mark: (http://robertgreiner.com/2014/08/cap-theorem-revisited/)
+* [A plain english introduction to CAP theorem] :heavy_check_mark: (http://ksat.me/a-plain-english-introduction-to-cap-theorem/)
+* [CAP FAQ] :heavy_check_mark: (https://github.com/henryr/cap-faq)
 
 ## Consistency patterns
 
@@ -488,7 +488,7 @@ This approach is seen in file systems and RDBMSes.  Strong consistency works wel
 
 ### Source(s) and further reading
 
-* [Transactions across data centers](http://snarfed.org/transactions_across_datacenters_io.html)
+* [Transactions across data centers] :heavy_check_mark: (http://snarfed.org/transactions_across_datacenters_io.html)
 
 ## Availability patterns
 
@@ -526,12 +526,12 @@ This topic is further discussed in the [Database](#database) section:
 * [Master-slave replication](#master-slave-replication)
 * [Master-master replication](#master-master-replication)
 
-## Domain name system
+## Domain name system :heavy_check_mark:
 
 <p align="center">
   <img src="http://i.imgur.com/IOyLj4i.jpg">
   <br/>
-  <i><a href=http://www.slideshare.net/srikrupa5/dns-security-presentation-issa>Source: DNS security presentation</a></i>
+  <i> <a href=http://www.slideshare.net/srikrupa5/dns-security-presentation-issa>Source: DNS security presentation</a></i>
 </p>
 
 A Domain Name System (DNS) translates a domain name such as www.example.com to an IP address.
