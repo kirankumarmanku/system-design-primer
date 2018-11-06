@@ -555,14 +555,14 @@ Services such as [CloudFlare](https://www.cloudflare.com/dns/) and [Route 53](ht
 ### Disadvantage(s): DNS
 
 * Accessing a DNS server introduces a slight delay, although mitigated by caching described above.
-* DNS server management could be complex and is generally managed by [governments, ISPs, and large companies](http://superuser.com/questions/472695/who-controls-the-dns-servers/472729).
-* DNS services have recently come under [DDoS attack](http://dyn.com/blog/dyn-analysis-summary-of-friday-october-21-attack/), preventing users from accessing websites such as Twitter without knowing Twitter's IP address(es).
+* DNS server management could be complex and is generally managed by [governments, ISPs, and large companies] :heavy_check_mark: (http://superuser.com/questions/472695/who-controls-the-dns-servers/472729).
+* DNS services have recently come under :heavy_check_mark: [DDoS attack](http://dyn.com/blog/dyn-analysis-summary-of-friday-october-21-attack/), preventing users from accessing websites such as Twitter without knowing Twitter's IP address(es).
 
 ### Source(s) and further reading
 
-* [DNS architecture](https://technet.microsoft.com/en-us/library/dd197427(v=ws.10).aspx)
-* [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
-* [DNS articles](https://support.dnsimple.com/categories/dns/)
+* :heavy_check_mark: [DNS architecture](https://technet.microsoft.com/en-us/library/dd197427(v=ws.10).aspx)
+*  :heavy_check_mark: [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
+*  :heavy_check_mark: [DNS articles](https://support.dnsimple.com/categories/dns/)
 
 ## Content delivery network
 
@@ -601,11 +601,11 @@ Sites with heavy traffic work well with pull CDNs, as traffic is spread out more
 
 ### Source(s) and further reading
 
-* [Globally distributed content delivery](https://figshare.com/articles/Globally_distributed_content_delivery/6605972)
-* [The differences between push and pull CDNs](http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/)
-* [Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network)
+*  :heavy_check_mark: [Globally distributed content delivery](https://figshare.com/articles/Globally_distributed_content_delivery/6605972)
+*  :heavy_check_mark: [The differences between push and pull CDNs](http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/)
+*  :heavy_check_mark:  [Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network)
 
-## Load balancer
+## Load balancer  :heavy_check_mark: 
 
 <p align="center">
   <img src="http://i.imgur.com/h81n9iK.png">
@@ -624,8 +624,8 @@ Load balancers can be implemented with hardware (expensive) or with software suc
 Additional benefits include:
 
 * **SSL termination** - Decrypt incoming requests and encrypt server responses so backend servers do not have to perform these potentially expensive operations
-    * Removes the need to install [X.509 certificates](https://en.wikipedia.org/wiki/X.509) on each server
-* **Session persistence** - Issue cookies and route a specific client's requests to same instance if the web apps do not keep track of sessions
+    *  :heavy_check_mark: Removes the need to install [X.509 certificates](https://en.wikipedia.org/wiki/X.509) on each server
+*  :heavy_check_mark: **Session persistence** - Issue cookies and route a specific client's requests to same instance if the web apps do not keep track of sessions
 
 To protect against failures, it's common to set up multiple load balancers, either in [active-passive](#active-passive) or [active-active](#active-active) mode.
 
@@ -634,7 +634,7 @@ Load balancers can route traffic based on various metrics, including:
 * Random
 * Least loaded
 * Session/cookies
-* [Round robin or weighted round robin](http://g33kinfo.com/info/archives/2657)
+*  :heavy_check_mark: [Round robin or weighted round robin](http://g33kinfo.com/info/archives/2657)
 * [Layer 4](#layer-4-load-balancing)
 * [Layer 7](#layer-7-load-balancing)
 
@@ -667,13 +667,13 @@ Load balancers can also help with horizontal scaling, improving performance and 
 
 ### Source(s) and further reading
 
-* [NGINX architecture](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/)
-* [HAProxy architecture guide](http://www.haproxy.org/download/1.2/doc/architecture.txt)
-* [Scalability](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
+*  :heavy_check_mark:  [NGINX architecture](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/)
+*   :heavy_check_mark:  [HAProxy architecture guide](http://www.haproxy.org/download/1.2/doc/architecture.txt)
+*  :heavy_check_mark:  [Scalability](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
 * [Wikipedia](https://en.wikipedia.org/wiki/Load_balancing_(computing))
-* [Layer 4 load balancing](https://www.nginx.com/resources/glossary/layer-4-load-balancing/)
-* [Layer 7 load balancing](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)
-* [ELB listener config](http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-listener-config.html)
+*   :heavy_check_mark:  [Layer 4 load balancing](https://www.nginx.com/resources/glossary/layer-4-load-balancing/)
+*   :heavy_check_mark: [Layer 7 load balancing](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)
+*   :heavy_check_mark: [ELB listener config](http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-listener-config.html)
 
 ## Reverse proxy (web server)
 
@@ -713,12 +713,12 @@ Additional benefits include:
 
 ### Source(s) and further reading
 
-* [Reverse proxy vs load balancer](https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/)
-* [NGINX architecture](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/)
-* [HAProxy architecture guide](http://www.haproxy.org/download/1.2/doc/architecture.txt)
-* [Wikipedia](https://en.wikipedia.org/wiki/Reverse_proxy)
+*  :heavy_check_mark:  [Reverse proxy vs load balancer](https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/)
+*  :heavy_check_mark:  [NGINX architecture](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/)
+*  :heavy_check_mark: [HAProxy architecture guide](http://www.haproxy.org/download/1.2/doc/architecture.txt)
+*  :heavy_check_mark:  [Wikipedia](https://en.wikipedia.org/wiki/Reverse_proxy)
 
-## Application layer
+## Application layer  :heavy_check_mark: 
 
 <p align="center">
   <img src="http://i.imgur.com/yB5SYwm.png">
@@ -730,7 +730,7 @@ Separating out the web layer from the application layer (also known as platform 
 
 Workers in the application layer also help enable [asynchronism](#asynchronism).
 
-### Microservices
+### Microservices   :heavy_check_mark: 
 
 Related to this discussion are [microservices](https://en.wikipedia.org/wiki/Microservices), which can be described as a suite of independently deployable, small, modular services.  Each service runs a unique process and communicates through a well-defined, lightweight mechanism to serve a business goal. <sup><a href=https://smartbear.com/learn/api-design/what-are-microservices>1</a></sup>
 
@@ -747,11 +747,11 @@ Systems such as [Consul](https://www.consul.io/docs/index.html), [Etcd](https://
 
 ### Source(s) and further reading
 
-* [Intro to architecting systems for scale](http://lethain.com/introduction-to-architecting-systems-for-scale)
-* [Crack the system design interview](http://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview)
-* [Service oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture)
-* [Introduction to Zookeeper](http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper)
-* [Here's what you need to know about building microservices](https://cloudncode.wordpress.com/2016/07/22/msa-getting-started/)
+*   :heavy_check_mark: [Intro to architecting systems for scale](http://lethain.com/introduction-to-architecting-systems-for-scale)
+*  :heavy_check_mark:  [Crack the system design interview](http://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview)
+*  :heavy_check_mark:  [Service oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture)
+*   :heavy_check_mark: [Introduction to Zookeeper](http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper)
+*   :heavy_check_mark: [Here's what you need to know about building microservices](https://cloudncode.wordpress.com/2016/07/22/msa-getting-started/)
 
 ## Database
 
