@@ -753,7 +753,7 @@ Systems such as [Consul](https://www.consul.io/docs/index.html), [Etcd](https://
 *   :heavy_check_mark: [Introduction to Zookeeper](http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper)
 *   :heavy_check_mark: [Here's what you need to know about building microservices](https://cloudncode.wordpress.com/2016/07/22/msa-getting-started/)
 
-## Database
+## Database   :heavy_check_mark: 
 
 <p align="center">
   <img src="http://i.imgur.com/Xkm5CXz.png">
@@ -816,8 +816,8 @@ Both masters serve reads and writes and coordinate with each other on writes.  I
 
 ##### Source(s) and further reading: replication
 
-* [Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
-* [Multi-master replication](https://en.wikipedia.org/wiki/Multi-master_replication)
+*  :heavy_check_mark:  [Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
+*  :heavy_check_mark:  [Multi-master replication](https://en.wikipedia.org/wiki/Multi-master_replication)
 
 #### Federation
 
@@ -833,7 +833,7 @@ Federation (or functional partitioning) splits up databases by function.  For ex
 
 * Federation is not effective if your schema requires huge functions or tables.
 * You'll need to update your application logic to determine which database to read and write.
-* Joining data from two databases is more complex with a [server link](http://stackoverflow.com/questions/5145637/querying-data-by-joining-two-tables-in-two-database-on-different-servers).
+*  :heavy_check_mark:  Joining data from two databases is more complex with a [server link](http://stackoverflow.com/questions/5145637/querying-data-by-joining-two-tables-in-two-database-on-different-servers).
 * Federation adds more hardware and additional complexity.
 
 ##### Source(s) and further reading: federation
@@ -858,15 +858,15 @@ Common ways to shard a table of users is either through the user's last name ini
 
 * You'll need to update your application logic to work with shards, which could result in complex SQL queries.
 * Data distribution can become lopsided in a shard.  For example, a set of power users on a shard could result in increased load to that shard compared to others.
-    * Rebalancing adds additional complexity.  A sharding function based on [consistent hashing](http://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html) can reduce the amount of transferred data.
+   :heavy_check_mark:    * Rebalancing adds additional complexity.  A sharding function based on [consistent hashing](http://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html) can reduce the amount of transferred data.
 * Joining data from multiple shards is more complex.
 * Sharding adds more hardware and additional complexity.
 
 ##### Source(s) and further reading: sharding
 
-* [The coming of the shard](http://highscalability.com/blog/2009/8/6/an-unorthodox-approach-to-database-design-the-coming-of-the.html)
+*  :heavy_check_mark:  [The coming of the shard](http://highscalability.com/blog/2009/8/6/an-unorthodox-approach-to-database-design-the-coming-of-the.html)
 * [Shard database architecture](https://en.wikipedia.org/wiki/Shard_(database_architecture))
-* [Consistent hashing](http://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html)
+*   :heavy_check_mark: [Consistent hashing](http://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html)
 
 #### Denormalization
 
@@ -934,7 +934,7 @@ Benchmarking and profiling might point you to the following optimizations.
 * [Tips for optimizing MySQL queries](http://aiddroid.com/10-tips-optimizing-mysql-queries-dont-suck/)
 * [Is there a good reason i see VARCHAR(255) used so often?](http://stackoverflow.com/questions/1217466/is-there-a-good-reason-i-see-varchar255-used-so-often-as-opposed-to-another-l)
 * [How do null values affect performance?](http://stackoverflow.com/questions/1017239/how-do-null-values-affect-performance-in-a-database-search)
-* [Slow query log](http://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html)
+*   :heavy_check_mark: [Slow query log](http://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html)
 
 ### NoSQL
 
